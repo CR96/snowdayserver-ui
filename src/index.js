@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
-import Percent from './components/Percent'
+import PageHeader from './components/PageHeader';
+import Percent from './components/Percent';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -32,6 +33,7 @@ function App() {
         <MuiThemeProvider theme={theme}>
             <React.Fragment>
                 <CssBaseline />
+                <PageHeader />
                 <Percent />
             </React.Fragment>
         </MuiThemeProvider>
