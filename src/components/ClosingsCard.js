@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
   card: {
-    maxWidth: 345,
+    maxWidth: 300,
     background: theme.palette.primary.dark,
   },
   media: {
