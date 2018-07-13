@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn run build:clean",
+    "build:clean": "cd build/static/ && mv js/*.js js/main.js && mv js/*.js.map js/main.js.map && mv css/*.css css/main.css && mv css/*.css.map css/main.css.map",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
