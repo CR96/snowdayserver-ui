@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import PageHeader from './components/PageHeader';
-import Percent from './components/Percent';
 import CardGrid from './components/CardGrid';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -35,7 +34,6 @@ function App() {
             <React.Fragment>
                 <CssBaseline />
                 <PageHeader />
-                <Percent />
                 <CardGrid />
             </React.Fragment>
         </MuiThemeProvider>
