@@ -6,6 +6,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { CardMedia } from '@material-ui/core';
 
 const styles = theme => ({
   card: {
@@ -14,7 +15,7 @@ const styles = theme => ({
   },
   media: {
     height: 0,
-    paddingTop: '56.25%', // 16:9
+    paddingTop: '100%',
   },
   text: {
     color: theme.palette.primary.contrastText,
@@ -34,12 +35,14 @@ function WeatherCard(props) {
             There are no active watches, warnings, or advisories.
           </Typography>
         </CardContent>
+        <CardMedia
+          className={classes.media}
+          image="https://radar.weather.gov/Conus/Loop/centgrtlakes_loop.gif"
+          title="Great Lakes Radar Loop"
+        />
         <CardActions>
           <Button className={classes.text} size="small" color="secondary">
             More Info
-          </Button>
-          <Button className={classes.text} size="small" color="secondary">
-            Show Radar
           </Button>
         </CardActions>
       </Card>
