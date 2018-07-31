@@ -32,7 +32,7 @@ class PageHeader extends React.Component {
         <AppBar position="static">
           <Toolbar>
             <Typography variant="title" color="inherit" className={classes.flex}>
-              GBCS Snow Day Calculator
+              Grand Blanc Snow Day
             </Typography>
             <IconButton className={classes.button} aria-label="Email the developer">
               <GithubCircle />
