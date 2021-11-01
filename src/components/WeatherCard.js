@@ -37,7 +37,7 @@ function WeatherCard(props) {
         </CardContent>
         <CardMedia
           className={classes.media}
-          image="https://radar.weather.gov/Conus/Loop/centgrtlakes_loop.gif"
+          image="https://radar.weather.gov/ridge/lite/CENTGRLAKES_loop.gif"
           title="Great Lakes Radar Loop"
         />
         <CardActions>
